@@ -1,0 +1,11 @@
+{
+  "StoreService": {
+    "host": "localhost",
+    "port": 8081,
+    "path": {
+      "branchInfo": "/api/bank/branch/code",
+      "login": "/api/system/account/login",
+      "media": "/api/bank/branch/mediaModule"
+    }
+  }
+}
