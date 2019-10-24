@@ -24,6 +24,9 @@ commonUtility.setCookie = function (name,value) {
 commonUtility.getCookie = function (name) {
   let reg = new RegExp("(^| )"+name+"=([^;]*)(;|$)");
   let arr = document.cookie.match(reg);
+  if(arr === null){
+    return null;
+  }
   return unescape(arr[2]);
 };
 
